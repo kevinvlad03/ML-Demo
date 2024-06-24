@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const signupBtn = document.getElementById('signupBtn');
     const loginForm = document.getElementById('loginForm');
     const signupForm = document.getElementById('signupForm');
+    const submitBtn = document.getElementById('submitBtn');
 
     loginBtn.addEventListener('click', () => {
         loginBtn.classList.add('active');
@@ -16,5 +17,18 @@ document.addEventListener('DOMContentLoaded', () => {
         loginBtn.classList.remove('active');
         signupForm.classList.remove('hidden');
         loginForm.classList.add('hidden');
+    });
+
+    // when pressing submit button, prevent default form submission and check manually the email and password
+    submitBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        if (email === 'admin@admin.com' && password === 'admin') {
+            alert('Login successful');
+        } else {
+            alert('Login failed');
+        }
     });
 });
