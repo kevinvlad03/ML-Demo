@@ -1,11 +1,9 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const loginBtn = document.getElementById('loginBtn');
     const signupBtn = document.getElementById('signupBtn');
     const loginForm = document.getElementById('loginForm');
     const signupForm = document.getElementById('signupForm');
-    const submitBtn = document.getElementById('submitBtn');
+    const submitBtn = document.querySelector('#loginForm button[type="submit"]');
 
     loginBtn.addEventListener('click', () => {
         loginBtn.classList.add('active');
@@ -21,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
         loginForm.classList.add('hidden');
     });
 
-    //when pressing enter, display alert
-    document.addEventListener('keydown', (e) => {
+    // When pressing enter, display alert
+    document.addEventListener('keypressed', (e) => {
         if (e.key === 'Enter') {
             Swal.fire({
                 title: "Custom width, padding, color, background.",
@@ -40,17 +38,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // when pressing submit button, prevent default form submission and check manually the email and password
+    // When pressing submit button, prevent default form submission and check manually the email and password
     submitBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
+        const email = document.getElementById('loginEmail').value;
+        const password = document.getElementById('loginPassword').value;
 
         if (email === 'admin@admin.com' && password === 'admin') {
-            alert('Login successful');
+            Swal.fire({
+                title: "Login successful",
+                icon: "success",
+                text: "Welcome Admin!",
+            });
         } else {
             Swal.fire({
-                title: "Custom width, padding, color, background.",
+                title: "Invalid email or password",
                 width: 600,
                 padding: "3em",
                 color: "#138A36",
