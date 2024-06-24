@@ -1,0 +1,203 @@
+/* styles */
+.quantico-regular {
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .quantico-bold {
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .quantico-regular-italic {
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .quantico-bold-italic {
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    background-image: url('istockphoto-858907118-1024x1024.jpg');
+    background-size: cover;
+    backdrop-filter: blur(1px);
+    background-blend-mode:soft-light;
+}
+
+header {
+    background-color: #2c2c2c;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Quantico",sans-serif;
+    color: rgb(81, 148, 88);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero-text{
+    display: block;
+    flex-direction: column;
+    margin-left: 20vh;
+    margin-top: 10vh;
+    color: #fff;
+}
+
+.hero-text h1{
+    font-size: 7vh;
+    font-family: "Quantico", sans-serif;
+    color: #fff;
+    
+}
+
+.hero-text h2{
+    font-size: 3vh;
+    font-family: "Quantico", sans-serif;
+    color: #fff;
+    font-weight: 200;
+}
+
+.hero2-button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    padding: 30px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(81, 148, 88);
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left:20vh;
+    margin-top: 5vh;
+}
+
+.hero2-button:hover {
+    background-color: #45a049;
+}
+
+.hero2-button:active {
+    background-color: #45a049;
+    transform: translateY(4px);
+}
+
+.hero2-button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
