@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const loginBtn = document.getElementById('loginBtn');
     const signupBtn = document.getElementById('signupBtn');
@@ -19,6 +21,25 @@ document.addEventListener('DOMContentLoaded', () => {
         loginForm.classList.add('hidden');
     });
 
+    //when pressing enter, display alert
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            Swal.fire({
+                title: "Custom width, padding, color, background.",
+                width: 600,
+                padding: "3em",
+                color: "#138A36",
+                background: "#fff url(https://img.freepik.com/premium-photo/hacker-code-running-down-computer-screen-terminal-3d-rendering_94607-1157.jpg?w=2000)",
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnR5M3g0am5zemdhNGI1Y3FwcHA4dDN2ajZleXNlOXd2Zjh2Ym5pMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ohONS2y8GTDoI/giphy.webp")
+                  left top
+                  no-repeat
+                `
+              });
+        }
+    });
+
     // when pressing submit button, prevent default form submission and check manually the email and password
     submitBtn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -28,7 +49,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (email === 'admin@admin.com' && password === 'admin') {
             alert('Login successful');
         } else {
-            alert('Login failed');
+            Swal.fire({
+                title: "Custom width, padding, color, background.",
+                width: 600,
+                padding: "3em",
+                color: "#138A36",
+                background: "#fff url(https://img.freepik.com/premium-photo/hacker-code-running-down-computer-screen-terminal-3d-rendering_94607-1157.jpg?w=2000)",
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnR5M3g0am5zemdhNGI1Y3FwcHA4dDN2ajZleXNlOXd2Zjh2Ym5pMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ohONS2y8GTDoI/giphy.webp")
+                  left top
+                  no-repeat
+                `
+              });
         }
     });
 });
