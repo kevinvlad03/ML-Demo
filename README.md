@@ -55,7 +55,4 @@ The dataset provided focuses on network traffic, including various parameters th
 - Python and relevant libraries (e.g., Pandas, Scikit-learn, Matplotlib)
 - Basic understanding of HTML, CSS, and JavaScript
 
-### Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/kevinvlad03/ML-Demo.git
+
